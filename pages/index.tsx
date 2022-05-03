@@ -5,7 +5,15 @@ import Contact from "components/Contact";
 import Projects from "components/Projects";
 export const Fade = require("react-reveal/Fade");
 
-export default function Home() {
+export type Project = {
+  title: string;
+  imgUrl: string;
+  stack: string[];
+  description: string;
+  link: string;
+};
+
+export default function Home({projects}: {projects: Project[]}) {
   return (
     <Layout>
       <Head>
@@ -38,12 +46,26 @@ export default function Home() {
         </div>
       </section>
       <About />
-      <Projects />
+      <Projects projects={projects} />
       <Contact />
 
       <footer className="text-center pt-16 pb-4">
-        <p>Design Inspired By Blanc, &copy; {new Date().getFullYear()} </p>
+        <p>
+          Design Inspired By <a href="https://jacekjeznach.com/">Jack</a> ,
+          &copy; {new Date().getFullYear()}{" "}
+        </p>
       </footer>
     </Layout>
   );
 }
+
+export const getStaticProps = async () => {
+  let res = require("projects.json");
+  let {projects} = res;
+
+  return {
+    props: {
+      projects,
+    },
+  };
+};
