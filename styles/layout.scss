@@ -1,0 +1,214 @@
+.Layout {
+  min-height: 100vh;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  // @apply scroll-pt-28;
+
+  :focus {
+    @apply outline-1 outline-primary;
+  }
+
+  p {
+    @apply text-sm md:text-base text-normalText font-light leading-6;
+  }
+
+  .Nav {
+    @apply flex w-full justify-between px-4 lg:px-8 items-center bg-mainBg;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    a {
+      transition: color 0.5s ease;
+      &:hover {
+        @apply text-primary;
+      }
+    }
+  }
+
+  // side links on the bottom of the screen
+  .side-links {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+    @apply hidden md:block;
+    a {
+      @apply block mx-auto p-2 flex items-center justify-center;
+      transition: all 0.4s;
+      &:hover {
+        transform: translateY(-0.4rem);
+        @apply text-primary;
+      }
+      &:last-child {
+        @apply mb-4;
+      }
+    }
+    .email-link {
+      @apply my-4;
+      letter-spacing: 0.1em;
+      writing-mode: vertical-rl;
+      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+      @apply text-sm;
+    }
+    &:after {
+      content: "";
+      @apply block w-[1px] h-[100px] mx-auto bg-white opacity-50;
+    }
+  }
+
+  .letter-shadow {
+    @apply text-primary;
+    // text-shadow: -5px 5px #fac146;
+    text-shadow: -5px 5px #fd2155;
+  }
+  // heading
+  .heading {
+    font-weight: 600;
+    &.big-heading {
+      font-size: clamp(40px, 8vw, 80px);
+      margin-top: -0.8rem;
+      @media (min-width: 900px) {
+        &:not(:first-child) {
+          margin-top: -2.3rem;
+        }
+      }
+    }
+    &.line-heading {
+      @apply flex items-center justify-start lg:text-4xl text-2xl mb-4;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        position: relative;
+        top: -1px;
+        flex-grow: 2;
+        height: 1px;
+        margin-left: 20px;
+        background-color: rgba(255, 255, 255, 0.562);
+      }
+    }
+  }
+
+  // main styles
+  main {
+    @apply max-w-[1300px] mx-auto w-full px-6 md:px-24 pt-10;
+
+    section {
+      position: relative;
+      @apply py-8 pt-24 md:pt-28;
+    }
+    @media (min-width: 1024px) {
+      section {
+        min-height: calc(100vh - 110px);
+      }
+    }
+  }
+  .img-wrapper {
+    @apply w-full lg:w-[55%];
+    max-height: 500px;
+
+    img {
+      transition: 0.5s ease;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+  }
+  .fake-big {
+    position: absolute;
+    top: -10%;
+    left: 42vw;
+    z-index: -1;
+    width: max-content;
+    font-weight: 600;
+    font-size: clamp(15rem, 10vw, 25rem);
+    color: rgba(255, 255, 255, 0.04);
+    &.left {
+      right: 42vw;
+      left: unset;
+    }
+  }
+  .btn {
+    @apply bg-transparent border border-primary rounded-sm w-full max-w-[220px] h-[50px] flex items-center justify-center my-4 text-primary relative overflow-hidden min-w-[100px];
+    &::after {
+      content: "";
+      @apply -left-[5%] top-0 absolute h-[110%] z-[3] w-[0] bg-primary;
+      transition: width 0.3s;
+      transform: skewX(-10deg);
+    }
+    span {
+      @apply relative;
+      z-index: 5;
+    }
+    &:hover {
+      @apply text-mainBg #{!important};
+      &::after {
+        width: 110%;
+      }
+    }
+  }
+
+  .form-group-wrap {
+    @apply flex items-center justify-between flex-wrap;
+    > div {
+      @apply w-full md:w-[48%];
+    }
+  }
+  .contact-icon-wrap {
+    @apply flex space-x-4 items-center w-full lg:w-fit lg:min-w-[70%] my-3 p-3 border-primary lg:border-transparent border transition-all duration-300 rounded-lg;
+    svg {
+      width: 20px;
+      height: 20px;
+      @apply stroke-primary;
+    }
+    &:hover {
+      @apply border-primary scale-105;
+      background-color: #fac1460a;
+    }
+  }
+  .contact-icons {
+    @apply flex space-x-8 ml-2 justify-center lg:justify-start;
+    .icon {
+      @apply rounded-full p-4 transition-colors;
+      &:hover {
+        @apply bg-primary text-black;
+      }
+    }
+  }
+
+  .nav_list_wrap {
+    @apply flex space-x-8 items-center justify-end;
+    .nav_list {
+      @apply flex space-x-8;
+    }
+    .contact-icons {
+      @apply hidden;
+    }
+    @media (max-width: 760px) {
+      @apply fixed inset-0 bg-mainBg py-8 px-6 flex-col justify-center items-start z-30 space-x-0 border border-primary min-h-[500px] overflow-y-auto;
+      clip-path: circle(0% at 100% 0);
+      transition: clip-path 0.5s ease;
+      &.show-nav {
+        clip-path: circle(100% at 50% 50%);
+      }
+      .nav_list {
+        @apply flex-col justify-center space-x-0 space-y-4 mb-3 w-full;
+        a {
+          @apply block;
+        }
+      }
+
+      .contact-icons {
+        @apply ml-0 justify-between space-x-10 mt-3 flex;
+        .icon {
+          @apply p-0;
+          &:hover {
+            @apply text-primary;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

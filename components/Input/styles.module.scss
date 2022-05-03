@@ -1,0 +1,16 @@
+.input_wrap {
+  @apply w-full flex flex-col my-4;
+
+  label {
+    @apply text-base mb-3 text-normalText;
+  }
+  .field {
+    @apply relative w-full rounded-lg outline outline-gray-300 outline-1 bg-transparent px-4 focus:outline-primary transition-all;
+  }
+  textarea {
+    @apply h-40;
+  }
+  input {
+    @apply h-12;
+  }
+}
