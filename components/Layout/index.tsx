@@ -2,6 +2,7 @@ import {ReactNode, useEffect} from "react";
 import {Icon} from "ts-react-feather-icons";
 import {useState} from "react";
 import {Fade} from "pages";
+import Link from "next/link";
 function Layout({children}: {children: ReactNode}) {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const toggleNav = () => setIsNavOpen(!isNavOpen);
@@ -25,25 +26,31 @@ function Layout({children}: {children: ReactNode}) {
           <nav className={`nav_list_wrap ${isNavOpen ? "show-nav" : ""}`}>
             <ol className="nav_list">
               <li>
-                <a onClick={toggleNav} href="#about">
-                  <Fade when={isNavOpen || windowWidth >= 760} bottom>
-                    About
-                  </Fade>
-                </a>
+                <Link href="/#about">
+                  <a onClick={toggleNav}>
+                    <Fade when={isNavOpen || windowWidth >= 760} bottom>
+                      About
+                    </Fade>
+                  </a>
+                </Link>
               </li>
               <li>
-                <a onClick={toggleNav} href="#works">
-                  <Fade when={isNavOpen || windowWidth >= 760} bottom>
-                    Work
-                  </Fade>
-                </a>
+                <Link href="/#works">
+                  <a onClick={toggleNav}>
+                    <Fade when={isNavOpen || windowWidth >= 760} bottom>
+                      Work
+                    </Fade>
+                  </a>
+                </Link>
               </li>
               <li>
-                <a onClick={toggleNav} href="#contact">
-                  <Fade when={isNavOpen || windowWidth >= 760} bottom>
-                    Contact
-                  </Fade>
-                </a>
+                <Link href="/#contact">
+                  <a onClick={toggleNav}>
+                    <Fade when={isNavOpen || windowWidth >= 760} bottom>
+                      Contact
+                    </Fade>
+                  </a>
+                </Link>
               </li>
             </ol>
             <a href="#resume" className="btn">

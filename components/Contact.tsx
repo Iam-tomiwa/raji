@@ -10,7 +10,7 @@ function Contact() {
         <h2 className="heading text-primary line-heading">Contact </h2>
       </Fade>
       <div className="flex justify-between items-stretch flex-wrap">
-        <Fade bottom cascade>
+        <Fade bottom>
           <div className="lg:w-[47%] w-full  pt-4 flex flex-col justify-between">
             <p>
               Reach out to me through these social handles or fill the form and

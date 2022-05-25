@@ -9,7 +9,7 @@ function About() {
       <Fade cascade bottom>
         <h2 className="heading text-primary line-heading">About Me!</h2>
       </Fade>
-      <Fade cascade bottom>
+      <Fade bottom>
         <div className="flex justify-between items-center w-full flex-wrap mt-10 lg:mt-20 gap-5">
           <div className="max-w-lg">
             <p>

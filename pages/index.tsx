@@ -5,7 +5,7 @@ import Contact from "components/Contact";
 import Projects from "components/Projects";
 export const Fade = require("react-reveal/Fade");
 
-export type Project = {
+export type ProjectType = {
   title: string;
   imgUrl: string;
   stack: string[];
@@ -13,7 +13,7 @@ export type Project = {
   link: string;
 };
 
-export default function Home({projects}: {projects: Project[]}) {
+export default function Home({projects}: {projects: ProjectType[]}) {
   return (
     <Layout>
       <Head>
@@ -26,7 +26,7 @@ export default function Home({projects}: {projects: Project[]}) {
         style={{minHeight: "calc(100vh - 90px)"}}
       >
         <div>
-          <Fade bottom cascade>
+          <Fade bottom>
             <div className="mb-4">
               <h1 className="heading big-heading">Hi,</h1>
               <h1 className="heading big-heading">
@@ -46,7 +46,7 @@ export default function Home({projects}: {projects: Project[]}) {
         </div>
       </section>
       <About />
-      <Projects projects={projects} />
+      <Projects showViewAllBtn projects={projects.slice(0, 5)} />
       <Contact />
 
       <footer className="text-center pt-16 pb-4">

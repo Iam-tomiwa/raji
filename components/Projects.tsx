@@ -1,19 +1,35 @@
 import Image from "next/image";
-import {Fade, Project} from "pages";
+import Link from "next/link";
+import {Fade, ProjectType} from "pages";
 
-function Projects({projects}: {projects: Project[]}) {
+function Projects({
+  projects,
+  showViewAllBtn,
+}: {
+  projects: ProjectType[];
+  showViewAllBtn?: boolean;
+}) {
   return (
     <section id="works">
       <>
-        <Fade bottom cascade>
+        <Fade bottom>
           <h2 className="heading text-primary line-heading">My Portfolio</h2>
           <div style={{top: "-3%"}} className="fake-big left">
             Portfolio
           </div>
-          <p className="max-w-lg">
-            I curated a list of recent projects I&lsquo;ve worked on. I&lsquo;ve
-            done them all together with amazing people.
-          </p>
+          <div className="flex justify-between items-center">
+            <p className="max-w-lg">
+              I curated a list of recent projects I&lsquo;ve worked on.
+              I&lsquo;ve done them all together with amazing people.
+            </p>
+            {showViewAllBtn && (
+              <Link href={"/projects"}>
+                <a className="btn">
+                  <span>View All</span>
+                </a>
+              </Link>
+            )}
+          </div>
         </Fade>
         <div>
           {projects.map((item, i) => (
