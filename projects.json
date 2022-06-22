@@ -1,25 +1,39 @@
 {
   "projects": [
     {
-      "title": "Title",
+      "title": "Yaraa",
+      "stack": ["ReactJs", "TypeScript", "scss", "Material UI"],
+      "description": "Yaraa is an e-procurement platform.",
+      "link": "https://yaraa.io",
+      "imgUrl": "/images/yaara.jpg"
+    },
+    {
+      "title": "Auction Village",
+      "stack": ["ReactJs", "scss", "Material UI"],
+      "description": "The application is for making auctions.",
+      "link": "http://auction-user.surge.sh",
+      "imgUrl": "/images/auction.jpg"
+    },
+    {
+      "title": "Fudi",
+      "stack": ["ReactJs", "scss", "Material UI"],
+      "description": "Fudi is a food/grocery delivery business. This is a website showcasing what Fudi does.",
+      "link": "https://www.fudi.ng",
+      "imgUrl": "/images/fudi.jpg"
+    },
+    {
+      "title": "Ules Website",
       "stack": ["HTML", "Css", "JS"],
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi pariatur voluptas odit libero aperiam sed eveniet sint, facere blanditiis officia consequatur explicabo veritatis quibusdam! Repellat dolorum sint explicabo illo unde, laudantium excepturi sunt non, in minima alias quia fugit!",
-      "link": "#",
+      "description": "This is a site built for the university of lagos engineering society in order to showcase everything about the organisation",
+      "link": "https://ulesweb.netlify.app",
       "imgUrl": "/images/ules.png"
     },
     {
-      "title": "Title 2",
+      "title": "Phantom Boxers",
       "stack": ["HTML", "Scss", "JS"],
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi pariatur voluptas odit libero aperiam sed eveniet sint, facere blanditiis officia consequatur explicabo veritatis quibusdam! Repellat dolorum sint explicabo illo unde, laudantium excepturi sunt non, in minima alias quia fugit!",
-      "link": "#",
-      "imgUrl": "/images/huddle.png"
-    },
-    {
-      "title": "Title 3",
-      "stack": ["React", "Scss", "MUI"],
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi pariatur voluptas odit libero aperiam sed eveniet sint, facere blanditiis officia consequatur explicabo veritatis quibusdam! Repellat dolorum sint explicabo illo unde, laudantium excepturi sunt non, in minima alias quia fugit!",
-      "link": "#",
-      "imgUrl": "/images/flyo.png"
+      "description": "This is a site for a dog selling/breeding business",
+      "link": "https://phantomboxers.com/",
+      "imgUrl": "/images/phantom.jpg"
     }
   ]
 }
