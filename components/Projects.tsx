@@ -48,21 +48,31 @@ function Projects({
                     ))}
                   </div>
                   <p className="py-4">{item.description}</p>
-                  <a href={item.link} className="btn">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={item.link}
+                    className="btn"
+                  >
                     <span>View Project</span>
                   </a>
                 </Fade>
               </div>
               <Fade bottom>
-                <div className="img-wrapper">
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="img-wrapper w-fit h-fit bg-[#111111] flex items-center justify-center"
+                >
                   <Image
                     src={item.imgUrl}
                     width={"600px"}
                     height={"500px"}
                     alt="portfolio"
-                    className="max-w-[60%]"
+                    className="max-w-[60%] object-contain"
                   />
-                </div>
+                </a>
               </Fade>
             </div>
           ))}
