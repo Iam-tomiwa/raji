@@ -1,6 +1,6 @@
-import {Fade} from "pages";
-import {Icon} from "ts-react-feather-icons";
-import Input, {TextArea} from "./Input";
+import { Fade } from "pages";
+import { Icon } from "ts-react-feather-icons";
+import Input, { TextArea } from "./Input";
 
 function Contact() {
   return (
@@ -23,7 +23,7 @@ function Contact() {
               </a>
               <a href="#" className="contact-icon-wrap">
                 <Icon name="mail" />
-                <p>raji@mail.com</p>
+                <p>rajimustapha30@mail.com</p>
               </a>
               <a href="#" className="contact-icon-wrap">
                 <Icon name="map-pin" />
@@ -56,7 +56,7 @@ function Contact() {
           <Fade bottom cascade>
             <TextArea placeholder="Enter Summary..." label="Message" />
             <button
-              style={{maxWidth: "unset", marginTop: "1.5rem"}}
+              style={{ maxWidth: "unset", marginTop: "1.5rem" }}
               className="btn"
             >
               <span>Submit</span>

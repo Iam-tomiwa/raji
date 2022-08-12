@@ -1,6 +1,6 @@
 import PersonImg from "public/images/person.png";
 import Image from "next/image";
-import {Fade} from "pages";
+import { Fade } from "pages";
 
 function About() {
   return (
@@ -28,7 +28,7 @@ function About() {
               <h3 className="text-primary mr-4">Skills:</h3>
               {"HTML, CSS3, SCSS, JavaScript, TypeScript, Redux, ReactJS"
                 .split(", ")
-                .map(el => (
+                .map((el) => (
                   <p className="mr-4" key={el}>
                     {el}
                   </p>
