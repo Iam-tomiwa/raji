@@ -2,35 +2,35 @@
   "projects": [
     {
       "title": "Yaraa",
-      "stack": ["ReactJs", "TypeScript", "scss", "Material UI"],
-      "description": "Yaraa is an e-procurement platform.",
+      "stack": ["ReactJs", "TypeScript", "SCSS", "Material UI"],
+      "description": "Yaraa is an e-procurement platform that helps control your company's spending by seamlessly integrating strategic sourcing, personalized approvals, budget management and lots more.",
       "link": "https://yaraa.io",
       "imgUrl": "/images/yaara.jpg"
     },
     {
       "title": "Auction Village",
-      "stack": ["ReactJs", "scss", "Material UI"],
-      "description": "The application is for making auctions.",
-      "link": "http://auction-user.surge.sh",
-      "imgUrl": "/images/auction.jpg"
+      "stack": ["ReactJs", "SCSS", "Material UI"],
+      "description": "I worked with a team to build a full functional auction website, featuring an admin dashboard and a user section.",
+      "link": "https://app.auctionsvillage.com/",
+      "imgUrl": "/images/auction.png"
     },
     {
       "title": "Fudi",
-      "stack": ["ReactJs", "scss", "Material UI"],
+      "stack": ["ReactJs", "SCSS", "Material UI"],
       "description": "Fudi is a food/grocery delivery business. This is a website showcasing what Fudi does.",
       "link": "https://www.fudi.ng",
       "imgUrl": "/images/fudi.jpg"
     },
     {
       "title": "Ules Website",
-      "stack": ["HTML", "Css", "JS"],
-      "description": "This is a site built for the university of lagos engineering society in order to showcase everything about the organisation",
+      "stack": ["HTML", "CSS", "JS"],
+      "description": "I built a website for the University of Lagos Engineering Society (ULES), showcasing an extensive detail of the student body, activities, galleries and events.",
       "link": "https://ulesweb.netlify.app",
       "imgUrl": "/images/ules.png"
     },
     {
       "title": "Phantom Boxers",
-      "stack": ["HTML", "Scss", "JS"],
+      "stack": ["HTML", "SCSS", "JS"],
       "description": "This is a site for a dog selling/breeding business",
       "link": "https://phantomboxers.com/",
       "imgUrl": "/images/phantom.jpg"
