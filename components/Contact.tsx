@@ -19,11 +19,11 @@ function Contact() {
             <div className="my-6">
               <a href="#" className="contact-icon-wrap">
                 <Icon name="phone" />
-                <p>08154050552</p>
+                <p>08087427344</p>
               </a>
               <a href="#" className="contact-icon-wrap">
                 <Icon name="mail" />
-                <p>rajimustapha30@mail.com</p>
+                <p>rajimustapha30@gmail.com</p>
               </a>
               <a href="#" className="contact-icon-wrap">
                 <Icon name="map-pin" />

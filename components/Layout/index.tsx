@@ -80,22 +80,20 @@ function Layout({ children }: { children: ReactNode }) {
         </nav>
       </header>
       <div aria-orientation="vertical" className="side-links left-8 right-auto">
-        <a href="mailto:rajimustapha30@mail.com">
+        <a href="https://github.com/mustykhot">
           <Icon name="github" size={18} />
         </a>
-        <a href="mailto:rajimustapha30@mail.com">
-          <Icon name="instagram" size={18} />
-        </a>
-        <a href="mailto:rajimustapha30@mail.com">
+
+        <a href="https://twitter.com/Musty_raji">
           <Icon name="twitter" size={18} />
         </a>
-        <a href="mailto:rajimustapha30@mail.com">
+        <a href="https://www.linkedin.com/in/raji-mustapha-3664ab238/">
           <Icon name="linkedin" size={18} />
         </a>
       </div>
       <div aria-orientation="vertical" className="side-links right-8 left-auto">
-        <a className="email-link" href="mailto:rajimustapha30@mail.com">
-          rajimustapha30@mail.com
+        <a className="email-link" href="mailto:rajimustapha30@gmail.com">
+          rajimustapha30@gmail.com
         </a>
       </div>
       <main>{children}</main>
