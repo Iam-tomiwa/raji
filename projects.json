@@ -16,10 +16,10 @@
     },
     {
       "title": "Forensics Academy",
-      "stack": ["ReactJs", "SCSS", "Material UI"],
-      "description": "Fudi is a food/grocery delivery business. This is a website showcasing what Fudi does.",
+      "stack": ["NextJs", "SCSS", "Material UI"],
+      "description": "The International Academy of Forensics (IAF) is an independent organisation instituted to provide innovative research and development, and world-class professional career development in Forensic Investigation and Criminal Intelligence, with application to the administration of justice",
       "link": "https://forensicsacademy.org",
-      "imgUrl": "/images/fudi.jpg"
+      "imgUrl": "/images/iaf.png"
     },
 
     {
