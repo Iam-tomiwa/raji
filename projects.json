@@ -15,12 +15,13 @@
       "imgUrl": "/images/auction.png"
     },
     {
-      "title": "Fudi",
+      "title": "Forensics Academy",
       "stack": ["ReactJs", "SCSS", "Material UI"],
       "description": "Fudi is a food/grocery delivery business. This is a website showcasing what Fudi does.",
-      "link": "https://www.fudi.ng",
+      "link": "https://forensicsacademy.org",
       "imgUrl": "/images/fudi.jpg"
     },
+
     {
       "title": "Ules Website",
       "stack": ["HTML", "CSS", "JS"],
